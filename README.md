@@ -1,7 +1,13 @@
-# Create Your Custom NFT Collection Dashboard in Minutes
+# NFT Collection Dashboard with NFT-Factory
+
+## Link to 👉 <a href="https://github.com/anupriyalathey/NFT-Factory.git">NFT-Factory smart contracts repo</a>
+
+<hr />
+
 This code template is designed to get your own customized NFT Collection Dashboard up and running **in just minutes!**.
 
 In the `src/config.js`, simply set your:
+
 - NFT collection contract address
 - Blockchain `chain_id` where the contract address is deployed
 - Dashboard title and banner
@@ -10,21 +16,24 @@ That's it!
 
 ![BYAC Dashboard](./public/byac_dashboard.png)
 
-
 ## Live Demo
+
 1. [Live on GitHub pages](https://covalenthq.github.io/nft-dashboard-template/)
 
 2. [Live on Replit](https://replit.com/@Covalent-Templates/NFT-Collection-Dashboard-Template?v=1)
 
 The live demo displays:
-* A customizable NFT collection dashboard page with a summary, a floor price graph and a preview of the first 5 NFTs in the collection 
-* Ability to see where your specific collection ranks in the global view of all NFT collections on a specific blockchain
-* Ability to select a specific NFT in your collection and see its metadata
+
+- A customizable NFT collection dashboard page with a summary, a floor price graph and a preview of the first 5 NFTs in the collection
+- Ability to see where your specific collection ranks in the global view of all NFT collections on a specific blockchain
+- Ability to select a specific NFT in your collection and see its metadata
 
 &nbsp;
+
 ## Fork and Customize
 
 ### GitHub Pages
+
 On GitHub, the code is available at https://github.com/covalenthq/nft-dashboard-template/tree/main
 
 To get this working with GitHub pages, do the following:
@@ -37,7 +46,7 @@ To get this working with GitHub pages, do the following:
 
 ![Create NFT Dashboard Template](./public/create_nft_dashboard_template_settings.png)
 
-3. Under the `Settings` tab, select the `Pages` menu item and copy the URL where your site is published. 
+3. Under the `Settings` tab, select the `Pages` menu item and copy the URL where your site is published.
 
 ![GitHub Pages Setting](./public/github_pages_setting.png)
 
@@ -65,25 +74,29 @@ TEMPLATE: {
     "banner_picture": "https://www.superflexfitness.com/wp-content/uploads/2017/03/3D-banner-background.jpg",
   },
 ```
+
 Commit your changes. Your custom NFT dashboard should be live at your published URL in just a couple minutes.
 
 ![BYAC Dashboard](./public/byac_dashboard.png)
 
 ### Replit
-On Replit, the code and hosted live demo site are integrated in one unified interface. 
+
+On Replit, the code and hosted live demo site are integrated in one unified interface.
 
 To get your customized NFT Dashboard working with Replit, do the following:
 
 1. Go to the [Replit live demo](https://replit.com/@Covalent-Templates/NFT-Collection-Dashboard-Template?v=1) and click `Fork repl`
 
-2. Create a Replit account if you do not already have one. 
+2. Create a Replit account if you do not already have one.
 
 3. Update the code in `src/config.js` using the details for your NFT collection (see above for code snippet).
 
-4. Press `Run` and wait for the deployment to complete (it may be a few minutes). Your dashboard will then be live at the provided `...repl.co` URL. 
+4. Press `Run` and wait for the deployment to complete (it may be a few minutes). Your dashboard will then be live at the provided `...repl.co` URL.
 
 &nbsp;
+
 ## Covalent API Endpoints
+
 The two primary Covalent API endpoints used in this code template include:
 
 1. Detail view of a specific collection:
@@ -91,6 +104,7 @@ The two primary Covalent API endpoints used in this code template include:
 `/{chain_id}/nft_market_cap/{collection}`
 
 This endpoint allows one to drill down into the details of a collection and the response object looks like the following:
+
 ```
 {
   "data": {
@@ -116,8 +130,8 @@ This endpoint allows one to drill down into the details of a collection and the 
         "quote_currency": "USD"
       },
 ```
-Data for the detail view is at a day granularity. 
 
+Data for the detail view is at a day granularity.
 
 2. Global view of Market Cap per blockchain:
 
@@ -126,6 +140,7 @@ Data for the detail view is at a day granularity.
 This endpoint provides a global view of multiple NFT collections from various marketplaces (from multiple chains) in a table that ranks them on their market cap.
 
 The response object looks similar to the following:
+
 ```
 {
   "data": {
@@ -158,12 +173,16 @@ The response object looks similar to the following:
 While a default `COVALENT_API_KEY` is used for this code template, it is recommended you register and use your own free API key from: https://www.covalenthq.com/platform
 
 &nbsp;
+
 ## Feedback and Support
+
 If you have any questions, comments, issues and feedback regarding this code template, please message us on [Discord](https://covalenthq.com/discord).
 
 &nbsp;
+
 ## About Covalent
-Covalent provides the industry-leading Unified API bringing visibility to billions of Web3 data points. 
+
+Covalent provides the industry-leading Unified API bringing visibility to billions of Web3 data points.
 
 ![Covalent Use Cases](./public/covalent_usecases.png)
 

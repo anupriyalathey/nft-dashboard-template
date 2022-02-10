@@ -3,12 +3,13 @@ import { Button, Box } from "@chakra-ui/react";
 import { ethers, Signer, Contract } from "ethers";
 import { formatEther } from "@ethersproject/units";
 import Web3Modal from "web3modal";
-const DAIABI = require("../abis/NFTFactory.json");
+const DAIABI = require("../../abis/NFTFactory.json");
 
 const web3Modal = new Web3Modal({
   providerOptions: {}, // required
 });
 
+/**
 function NFTFactory() {
   const [web3ModalInstance, setWeb3ModalInstance] = useState();
   const [provider, setProvider] = useState();
@@ -74,5 +75,10 @@ function NFTFactory() {
     </Button>
   );
 }
+ */
 
-export default NFTFactory;
+export default function NFTFactory() {
+  const [web3ModalInstance, setWeb3ModalInstance] = useState(null);
+
+  return <div>hello</div>;
+}

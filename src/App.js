@@ -5,6 +5,7 @@ import {
   Route,
   HashRouter,
 } from "react-router-dom";
+import { ChakraProvider } from "@chakra-ui/react";
 import Global from "./pages/GlobalView";
 import CollectionView from "./pages/CollectionView";
 import NFTView from "./pages/NFTView";
